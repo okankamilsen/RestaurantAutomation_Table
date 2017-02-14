@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        
+
+        <Button
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Garson" />
+
+        <TextView
+            android:id="@+id/tableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+    </LinearLayout>
+
+    
+	
+    <TabHost
+		android:id="@+id/tabHost"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true">
+        <LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+            <TabWidget
+				android:id="@android:id/tabs"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"></TabWidget>
+            <FrameLayout
+				android:id="@android:id/tabcontent"
+				android:layout_width="match_parent"
+				android:layout_height="fill_parent">
+				
+                <LinearLayout
+					android:id="@+id/meals"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="#ffc916"
+					android:orientation="vertical"
+					android:text="Meals">
+
+                    <ListView
+                        android:id="@+id/mealList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+
+                </LinearLayout>
+                
+                <LinearLayout
+					android:id="@+id/beverages"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="#FFFFFF"
+					android:orientation="vertical"
+					android:text="Beverages">
+                    <ListView
+                        android:id="@+id/beverageList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </LinearLayout>
+                
+                <LinearLayout
+					android:id="@+id/desserts"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="#da8200"
+					android:orientation="vertical"
+					android:text="Desserts">
+                    <ListView
+                        android:id="@+id/dessertList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </LinearLayout>
+                <LinearLayout
+					android:id="@+id/orders"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="#da8200"
+					android:orientation="vertical"
+					android:text="Orders">
+                    <ListView
+                        android:id="@+id/orderList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </LinearLayout>
+                
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

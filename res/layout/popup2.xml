@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout 
+   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/layout_border"
+        android:orientation="vertical"
+        android:padding="3dp" >
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shape3"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/Indexparameterheader"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Name of Meal"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/centerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/header"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                  android:id="@+id/imageView1"
+                  android:layout_width="75dp"
+                  android:layout_height="75dp"
+                  android:layout_alignLeft="@+id/spinner"
+                  android:layout_marginRight="102dp"
+                  android:layout_gravity="center"
+                  android:src="@drawable/ic_launcher" />
+
+              <Spinner
+                  android:id="@+id/spinner"
+                  android:layout_width="wrap_content"
+                  android:layout_height="40dp"
+                  android:layout_marginRight="7dp"
+                  android:paddingLeft="6dp"
+                  android:paddingRight="6dp"
+                  android:spinnerMode="dialog" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#83B5E6"
+            android:gravity="center"
+            android:padding="10dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:text="Add" />
+            <Button
+                android:id="@+id/closeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:text="Close" />
+
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
